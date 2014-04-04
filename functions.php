@@ -52,10 +52,7 @@ function steph_meta_data() { ?>
 
 <span class="post-meta clearfix">
     In <?php echo get_the_category_list(', '); ?>
-    <?php comments_popup_link( '<i class="fa fa-comments"></i> Leave a comment', '<i class="fa fa-comments"></i> 1 Comment', '<i class="fa fa-comments"></i> % Comments', 'comment-counts alignright', ''); ?>
-
-<a href="<?php the_permalink() ?>#comments" class="comment-counts alignright"><i class="fa fa-comments"></i> View Comments</a>
-
+    <a href="<?php the_permalink() ?>#comments" class="comment-counts alignright"><i class="fa fa-comments"></i> View Comments</a>
 </span>
 
 <?php }
