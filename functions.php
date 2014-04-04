@@ -46,3 +46,13 @@ function remove_width_attribute( $html ) {
    $html = preg_replace( '/(width|height)="\d*"\s/', "", $html );
    return $html;
 }
+
+
+function steph_meta_data() { ?>
+
+<span class="post-meta clearfix">
+    In <?php echo get_the_category_list(', '); ?>
+    <?php comments_popup_link( '<i class="fa fa-comments"></i> Leave a comment', '<i class="fa fa-comments"></i> 1 Comment', '<i class="fa fa-comments"></i> % Comments', 'comment-counts alignright', ''); ?>
+</span>
+
+<?php }

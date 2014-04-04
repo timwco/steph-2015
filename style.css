@@ -209,11 +209,11 @@ h1.pageTitle {
 .post-meta-sidebar a {
   color: #888; }
 
-.post-meta-sidebar h1 {
+.post-meta-sidebar h5 {
   font-weight: 300;
   margin: 10px 0 0; }
 
-.post-meta-sidebar h4 {
+.post-meta-sidebar h6 {
   color: #888; }
 
 .post-meta-sidebar .fa {
@@ -226,7 +226,7 @@ h1.pageTitle {
   max-width: 100%; }
 
 .post-content .wp-post-image {
-	margin-bottom: 25px;
+	margin-bottom: 5px;
 }
 
 .post-content .post-thumbnail {
@@ -250,6 +250,12 @@ h1.pageTitle {
 .gallery-previous .fa {
   right: 40px; }
 
+.archiveTitle {
+    margin: -60px 0 30px -15px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
 .post-content .post-thumbnail:hover:after {
   content: "";
   position: absolute;
@@ -262,7 +268,10 @@ h1.pageTitle {
 
 .post-content .post-meta {
   font-size: 11px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding: 5px 0 15px 1px;
+  display: block;
+}
 
 .post-content .post-title {
   font-size: 24px;
@@ -477,6 +486,11 @@ h1.pageTitle {
   #header-social-networks {
     float: none;
     text-align: center; }
+
+.archiveTitle { 
+    margin-left: 0;
+    text-align: center;
+}
 
   #header-social-networks li {
     vertical-align: -4px; }

@@ -3,16 +3,22 @@
 			<div id="content" class="col-lg-9">
 				<?php if (have_posts()) : ?>
 					<?php while (have_posts()) : the_post(); ?>
+
+						<?php if (is_category()) : ?>
+							<h2 class="archiveTitle">Category: <?php echo single_cat_title( '', false ); ?></h2>
+						<?php endif; ?>
+
 						<article class="post-wrapper clearfix">
 							<div class="row">
 								<aside class="post-meta-sidebar col-lg-1">
-									<h1><?php the_time('j') ?></h1>
-									<h4><?php the_time('M') ?></h4>
+									<h5><?php the_time('j') ?></h5>
+									<h6><?php the_time('M') ?></h6>
 								</aside>
 								<div class="post-content col-lg-11">
 									<?php if ( has_post_thumbnail() ) : ?>
 										<a href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
 									<?php endif; ?>
+									<?php steph_meta_data(); ?>
 									<h1 class="post-title">
 										<a href="<?php the_permalink() ?>" class="post-title"><?php the_title(); ?></a>
 									</h1>

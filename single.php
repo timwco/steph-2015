@@ -6,13 +6,14 @@
 						<article class="post-wrapper clearfix">
 							<div class="row">
 								<aside class="post-meta-sidebar col-lg-1">
-									<h1><?php the_time('j') ?></h1>
-									<h4><?php the_time('M') ?></h4>
+									<h5><?php the_time('j') ?></h5>
+									<h6><?php the_time('M') ?></h6>
 								</aside>
 								<div class="post-content col-lg-11">
 									<?php if ( has_post_thumbnail() ) : ?>
 										<?php the_post_thumbnail() ?>
 									<?php endif; ?>
+									<?php steph_meta_data(); ?>
 									<h1 class="post-title"><?php the_title(); ?></h1>
 									<div class="post-body"><?php the_content(); ?></div>
 								</div>
