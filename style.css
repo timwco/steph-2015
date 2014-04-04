@@ -211,9 +211,11 @@ h1.pageTitle {
 
 .post-meta-sidebar h5 {
   font-weight: 300;
+  font-size: 36px;
   margin: 10px 0 0; }
 
 .post-meta-sidebar h6 {
+    font-size: 18px;
   color: #888; }
 
 .post-meta-sidebar .fa {
