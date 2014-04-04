@@ -18,6 +18,9 @@
 								</div>
 							</div>
 						</article>
+
+						<div class="commentsHolder"><?php comments_template(); ?></div>
+
 					<?php endwhile; ?>
 				<?php else : ?>
 					<article class="post-wrapper clearfix">
