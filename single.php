@@ -20,7 +20,7 @@
 							</div>
 						</article>
 
-						<div class="commentsHolder"><?php comments_template(); ?></div>
+						<div id="comments"><?php comments_template(); ?></div>
 
 					<?php endwhile; ?>
 				<?php else : ?>
