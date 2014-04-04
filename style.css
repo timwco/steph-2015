@@ -180,7 +180,7 @@ h1.pageTitle {
 
 /* 7.0 - Blog */
 .post-wrapper {
-  margin-bottom: 100px; }
+  margin-bottom: 50px; }
 
 /* 7.1 - Post Format */
 .format-quote blockquote {
@@ -300,7 +300,7 @@ h1.pageTitle {
   line-height: 25px; }
 
 .post-content .readmore {
-  margin-top: 40px; }
+  margin-top: 10px; }
 
 .post-tags {
   margin: 40px 0;
