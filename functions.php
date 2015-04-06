@@ -38,6 +38,7 @@ function filter_wp_title( $title ) {
 // Image Stuff
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 813, 282 );
+add_image_size( 'project-image', 500, 500, true );
 
 add_filter( 'post_thumbnail_html', 'remove_width_attribute', 10 );
 add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 );
@@ -56,3 +57,7 @@ function steph_meta_data() { ?>
 </span>
 
 <?php }
+
+// Portfolio
+//include the main class file
+require_once('admin/project_setup.php');
