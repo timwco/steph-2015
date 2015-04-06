@@ -738,3 +738,25 @@ a.meanmenu-reveal {
   animation-duration: 1500ms;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
+
+
+/* Projects */
+
+.portfolioWrapper {
+  overflow: auto;
+  margin-top: 25px;
+}
+.itemBlock {
+  float: left;
+  width: 31%;
+  margin-right: 3%;
+  margin-bottom: 50px;
+}
+.itemBlock:nth-child(3n) {
+  margin-right: 0;
+}
+.itemBlock h3 {
+  margin: 15px 0 0 0;
+  font-size: 18px;
+  text-align: center;
+}

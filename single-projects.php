@@ -7,20 +7,7 @@
               <div class="row">
                 <div class="post-content col-lg-11">
                   <h1 class="post-title"><?php the_title(); ?></h1>
-                  <div class="post-body">
-                    <?php the_content(); ?>
-                    <div class="portfolioWrapper">
-                      <?php 
-                        $loop = new WP_Query( array( 'post_type' => 'projects', 'orderby' => 'menu_order', 'order' => 'DESC' )); 
-                      ?>
-                      <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                        <div class="itemBlock">
-                          <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( $post_id, 'project-image' ); ?></a>
-                          <h3><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h3>
-                        </div>
-                      <?php endwhile; ?> 
-                    </div>
-                  </div>
+                  <div class="post-body"><?php the_content(); ?></div>
                 </div>
               </div>
             </article>
