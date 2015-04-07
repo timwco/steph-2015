@@ -11,7 +11,7 @@
                     <?php the_content(); ?>
                     <div class="portfolioWrapper">
                       <?php 
-                        $loop = new WP_Query( array( 'post_type' => 'projects', 'orderby' => 'menu_order', 'order' => 'DESC' )); 
+                        $loop = new WP_Query( array( 'post_type' => 'projects', 'posts_per_page' => 150, 'orderby' => 'menu_order', 'order' => 'DESC' )); 
                       ?>
                       <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
                         <div class="itemBlock">
