@@ -1,6 +1,6 @@
 	<footer id="main-footer">
 		<div class="container">
-			<div class="colophon">&copy; 2014 Steph Whitacre</div>
+			<div class="colophon">&copy; 2015 Steph Whitacre</div>
 		</div>
 	</footer>
 
